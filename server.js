@@ -13,12 +13,13 @@ wss.on('connection', (ws) => {
     if (!message.handsfree) return
     
     // Move cursor
-    if (message.action === 'updateCursor') {
-      robot.moveMouse(message.cursor.x, message.cursor.y)
+    if (message.action === 'move') {
+      robot.moveMouse(message.data.pointer.x, message.data.pointer.y)
+    }
 
-      if (message.cursor.state.mouseDown) {
-        robot.mouseClick()
-      }
+    // Click
+    if (message.action === 'click') {
+      robot.mouseClick()
     }
   })
 
