@@ -1,0 +1,30 @@
+{
+  "name": "desktop-facepointer",
+  "version": "0.0.1",
+  "description": "Control your desktop's pointer with your face!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handsfreejs/desktop-pointer.git"
+  },
+  "author": "Oz Ramos <heyozramos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/handsfreejs/desktop-pointer/issues"
+  },
+  "homepage": "https://github.com/handsfreejs/desktop-pointer#readme",
+  "dependencies": {
+    "handsfree": "^6.0.1",
+    "robotjs": "^0.6.0",
+    "ws": "^7.2.0"
+  },
+  "engines": {
+    "node": "<12.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^7.1.2"
+  }
+}
